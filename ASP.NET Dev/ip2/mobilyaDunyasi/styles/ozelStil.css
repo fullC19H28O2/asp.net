@@ -1,0 +1,5 @@
+﻿.carousel-indicators button[type=button]
+{
+    height:24px;
+    background-color:rgba(0,0,0,1.0);
+}
