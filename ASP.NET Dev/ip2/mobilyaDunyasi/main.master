@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Mobilya Dünyası - XXXXXXXXx </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="icerik">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="Deafult.aspx">Mobilya Dünyası</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-
+        target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Default.aspx">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hakkimizda.aspx">Hakkımızda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ürünler
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-capitalize" href="#">Oturma Grupları</a></li>
+            <li><a class="dropdown-item" href="#">Yemek Odası</a></li>
+            <li><a class="dropdown-item" href="#">Yatak Odası</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.aspx">İletişim</a>
+        </li>
+      </ul> 
+      <div class="d-flex" role="search">
+        <asp:TextBox ID="txtAra" runat="server" CssClass="form-control me-2" TextMode="Search" placeholder ="Search" aria-label="Search"></asp:TextBox>
+          <asp:Button ID="btnAra" runat="server" Text="Ara" CssClass="btn btn-outline-success"/>
+      </div>
+    </div>
+  </div>
+</nav>
+        
+        <asp:ContentPlaceHolder id="contentIcerik" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </footer>
+</div>
+        <link href="styles/bootstrap.min.css" rel="stylesheet" />
+    </div>
+    </form>
+    <script src="styles/bootstrap.bundle.min.js"></script>
+</body>
+</html>
